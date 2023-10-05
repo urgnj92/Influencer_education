@@ -1,0 +1,48 @@
+#main-container {
+  width: 100%;
+}
+#main-container #banner .banner-image {
+  display: block;
+  border: 1px solid black;
+  height: 200px;
+  width: 70%;
+  margin: 80px auto 0;
+  text-align: center;
+}
+#main-container #banner .banner-image img {
+  height: 200px;
+}
+#main-container #banner .image-icon ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 5px 0 0;
+}
+#main-container #banner .image-icon ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+}
+#main-container #banner .image-icon ul li {
+  margin-right: 10px;
+}
+#main-container #banner .image-icon ul :last-child {
+  margin: 0;
+}
+#main-container #notice {
+  margin: 50px auto 0;
+  padding: 0;
+  width: 70%;
+  height: 400px;
+}
+#main-container #notice h2 {
+  color: red;
+}
+#main-container #notice .notice-box {
+  margin: 0 auto;
+  width: 95%;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+}/*# sourceMappingURL=top.css.map */
