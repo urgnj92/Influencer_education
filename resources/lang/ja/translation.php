@@ -1,0 +1,20 @@
+<?php 
+return [
+    'Login' => 'ログイン',
+    'LoginPage' => 'ログインはこちら',
+    'Logout' => 'ログアウト',
+    'Register' => '登録',
+    'RegisterPage' => '登録はこちら',
+    'E-Mail' => 'メールアドレス',
+    'Password' => 'パスワード',
+    'Confirm Password' => 'パスワード確認',
+    'Remember Me' => 'パスワードを記憶する',
+    'New Register' => '新規会員登録',
+    'Name' => 'ユーザー名',
+    'Name Kana' => 'カナ',
+    'Forgot Your Password?' => 'パスワードを忘れた場合',
+    'Reset Password' => 'パスワードをリセット',
+    'Send Password Reset Link' => 'メールアドレスに送信',
+    'Please confirm your password before continuing.' => '続行する前にパスワードを確認してください。',
+    'Login Error' => 'アカウントが見つかりません',
+];

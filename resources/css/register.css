@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .container {
+  margin: 0 auto;
+  width: 100%;
+}
+main .container .text-md-end {
+  text-align: right !important;
+}
+main .container .col-form-label {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+  color: rgb(174, 174, 174);
+}
+main .container .form-control {
+  width: 500px;
+  color: rgb(174, 174, 174);
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 5px;
+}
+main .container .row {
+  display: flex;
+  margin-top: 15px;
+}
+main .container .justify-content-center {
+  text-align: center;
+  justify-content: center;
+}
+main .container .card .card-header {
+  font-weight: normal;
+  font-size: 40px;
+  color: rgb(174, 174, 174);
+}
+main .container .card .card-body {
+  margin-top: 50px;
+}
+main .container .offset-md-4 {
+  margin-top: 50px;
+}
+main .container .offset-md-4 .btn {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(235, 88, 55);
+}/*# sourceMappingURL=register.css.map */

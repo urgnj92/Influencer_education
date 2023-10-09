@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  h1{
+    margin: 0;
+  }
+}
+
+.header-chenge{
+  height: 80px;
+  //border: 5px solid green;
+  position: relative;
+
+  .chenge-item{
+    position: absolute;
+    top: 70%;
+    right: 7%;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(174, 174, 174);
+    font-size: 15px;
+  }
+}
+
+main{
+  margin-top: 70px;
+}

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  margin: 0;
+}
+
+.header-chenge {
+  height: 80px;
+  position: relative;
+}
+.header-chenge .chenge-item {
+  position: absolute;
+  top: 70%;
+  right: 7%;
+}
+.header-chenge a {
+  text-decoration: none;
+  color: rgb(174, 174, 174);
+  font-size: 15px;
+}
+
+main {
+  margin-top: 70px;
+}/*# sourceMappingURL=loginHeader.css.map */
