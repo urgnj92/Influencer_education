@@ -62,9 +62,9 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('translation.Login') }}
-                                </button>
+                                <input type="submit" value="{{ __('translation.Login') }}" class="btn btn-primary">
+                                    
+                                
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">

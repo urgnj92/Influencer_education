@@ -3,6 +3,9 @@ body {
   margin: 0;
   line-height: 1;
 }
+body a {
+  text-decoration: none;
+}
 body li {
   list-style: none;
 }
@@ -16,13 +19,13 @@ body header #header-contents {
   margin: 0 40px;
   height: 70px;
 }
-body header #header-contents ul {
+body header #header-contents .header-nav {
   display: flex;
   justify-content: flex-start;
   padding: 0;
   height: 30px;
 }
-body header #header-contents ul li {
+body header #header-contents .header-nav li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,22 +34,20 @@ body header #header-contents ul li {
   width: 120px;
   font-style: normal;
 }
-body header #header-contents ul #classProgress {
+body header #header-contents .header-nav #classProgress {
   margin: 0 20px;
 }
-body header #header-contents ul #setList, body header #header-contents ul #classProgress {
+body header #header-contents .header-nav #setList, body header #header-contents .header-nav #classProgress {
   font-size: 20px;
 }
-body header #header-contents ul #profileSettings {
+body header #header-contents .header-nav #profileSettings {
   font-size: 13px;
 }
-body header #header-contents ul a {
+body header #header-contents .header-nav a {
   display: block;
-  text-decoration: none;
   color: white;
 }
-body header #header-contents #logout a {
+body header #header-contents .logout-link {
   color: black;
   font-size: 15px;
-  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

@@ -3,6 +3,10 @@ body{
 	margin: 0;
 	line-height: 1;
 
+	a{
+		text-decoration: none;
+	}
+
 	li{
 		list-style: none;
 	}
@@ -16,7 +20,7 @@ body{
 			margin: 0 40px;
 			height: 70px;
 
-			ul{
+			.header-nav{
 				display: flex;
 				justify-content: flex-start;
 				padding: 0;
@@ -42,17 +46,13 @@ body{
 				}
 				a{
 					display: block;
-					text-decoration: none;
 					color: white;
 				}
 			}
 
-			#logout{
-				a{
+			.logout-link{
 						color: black;
 						font-size: 15px;
-						text-decoration: none;
-				}
 			}
 		}
 	}

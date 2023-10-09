@@ -13,14 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    if(auth()->check()){
+        return view('top');
+    }else{
+        return view('/auth/login');
+    }
+    
+});
 
 Route::get('/top', function () {
-    return view('top');
+    if(auth()->check()){
+        return view('top');
+    }else{
+        return view('/auth/login');
+    }
 });
+
+
+Route::get('/delivery', function () {
+        return view('delivery');
+});
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/*Route::get('/top', function () {
+    return view('top');
+});*/
+

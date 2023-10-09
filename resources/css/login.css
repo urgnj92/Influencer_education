@@ -64,6 +64,7 @@ main .container .offset-md-4 .btn {
   color: white;
   font-size: 20px;
   background-color: rgb(235, 88, 55);
+  border: 1px solid black;
 }
 main .container .offset-md-4 .btn-link {
   display: none;

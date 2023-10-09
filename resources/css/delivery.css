@@ -1,0 +1,30 @@
+#main-container {
+  width: 100%;
+}
+#main-container img {
+  height: 200px;
+}
+#main-container .flex-box {
+  display: flex;
+  justify-content: center;
+}
+#main-container .flex-box #main-contents .image-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-container .flex-box #main-contents .image-btn-box .completion-btn {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#main-container .flex-box #main-contents .image-btn-box .completion-btn button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(235, 88, 55);
+}/*# sourceMappingURL=delivery.css.map */

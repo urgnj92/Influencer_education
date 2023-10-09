@@ -1,0 +1,42 @@
+#main-container{
+	width: 100%;
+	img{
+		height: 200px;
+		//width: 100%;
+	}
+
+	.flex-box{
+		display: flex;
+		justify-content: center;
+		
+		#main-contents{
+			//margin: 0 auto;
+			//width: 100px;
+			.image-btn-box{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+
+				.completion-btn{
+					width: 300px;
+					margin: 0 auto;
+					text-align: center;
+					
+
+					button{
+						display: inline-block;
+						
+						border: none;
+						border-radius: 10px;
+						width: 200px;
+						height: 40px;
+						font-size: 20px;
+						color: white;
+						background-color: rgb(235, 88, 55);
+					}
+				}
+			}
+		}
+	}
+}

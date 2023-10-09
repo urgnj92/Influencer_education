@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="header-chenge">
-        @if (Request::is('login'))
+        @if (Request::is('login') || Request::is('top') || Request::is('/'))
           <div class="chenge-item">
             <a class="chenge-link" href="{{ route('register') }}">{{ __('translation.RegisterPage') }}</a>
           </div>
