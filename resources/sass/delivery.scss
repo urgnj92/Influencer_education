@@ -1,8 +1,8 @@
 #main-container{
 	width: 100%;
-	img{
-		height: 200px;
-		//width: 100%;
+		img{
+		//height: 200px;
+		width: 400px;
 	}
 
 	.flex-box{
@@ -16,10 +16,10 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				
+
 
 				.completion-btn{
-					width: 300px;
+					width: 400px;
 					margin: 0 auto;
 					text-align: center;
 					
@@ -35,6 +35,27 @@
 						color: white;
 						background-color: rgb(235, 88, 55);
 					}
+				}
+			}
+
+			#curriculum{
+				.classes{
+					display: flex;
+					justify-content: center;
+					background-color: aqua;
+					color: white;
+					border: 1px solid black;
+					border-radius: 10px;
+					width: 130px;
+					height: 30px;
+					align-items: center;
+				}
+				.title{
+					font-size: 30px;
+					margin: 20px 0 10px;
+				}
+				h4{
+					margin: 0 0 30px;
 				}
 			}
 		}

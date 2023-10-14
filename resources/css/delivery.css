@@ -2,7 +2,7 @@
   width: 100%;
 }
 #main-container img {
-  height: 200px;
+  width: 400px;
 }
 #main-container .flex-box {
   display: flex;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 #main-container .flex-box #main-contents .image-btn-box .completion-btn {
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   text-align: center;
 }
@@ -27,4 +27,22 @@
   font-size: 20px;
   color: white;
   background-color: rgb(235, 88, 55);
+}
+#main-container .flex-box #main-contents #curriculum .classes {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 130px;
+  height: 30px;
+  align-items: center;
+}
+#main-container .flex-box #main-contents #curriculum .title {
+  font-size: 30px;
+  margin: 20px 0 10px;
+}
+#main-container .flex-box #main-contents #curriculum h4 {
+  margin: 0 0 30px;
 }/*# sourceMappingURL=delivery.css.map */

@@ -13,20 +13,21 @@
         <div id="main-contents">
             <div class="image-btn-box">
                 <div class="banner-image">
-                    <img class="slide" src="../public/storage/images/cosplay-5650215_1280.jpg" alt="">
+                    <img class="slide" src="../public/storage/images/linkedin-7341248_1280.jpg" alt="">
                 </div>
                 <div class="completion-btn">
                     <button>受講しました</button>
                 </div>
             </div>
         
-            <div id="notice">
-                <h2>お知らせ</h2>
+            <div id="curriculum">
+                <div class="classes">小学１年生</div>
+                <h1 class="title">授業タイトル</h1>
+                <h4>講座内容</h4>
                 <div class="notice-box">
-                    <ul>
-                        <li>adsf</li>
-                        <li>adsf</li>
-                    </ul>
+                    <p class="description">
+                        kokoo
+                    </p>
                 </div>
             </div>
         </div>
