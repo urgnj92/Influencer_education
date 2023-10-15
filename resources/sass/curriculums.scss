@@ -1,6 +1,6 @@
 #main-container{
 	width: 100%;
-		img{
+		video{
 		//height: 200px;
 		width: 400px;
 	}
@@ -24,7 +24,7 @@
 					text-align: center;
 					
 
-					button{
+					.button{
 						display: inline-block;
 						
 						border: none;
@@ -34,6 +34,7 @@
 						font-size: 20px;
 						color: white;
 						background-color: rgb(235, 88, 55);
+						cursor: pointer;
 					}
 				}
 			}

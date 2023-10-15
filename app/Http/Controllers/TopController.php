@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class TopController extends Controller
 {
-    //
     public function showArticles(){
         $model = new Article();
         $articles = $model->getArticles();

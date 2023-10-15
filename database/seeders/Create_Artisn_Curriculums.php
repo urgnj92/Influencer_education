@@ -33,10 +33,15 @@ class Create_Artisn_Curriculums extends Seeder
         DB::table('curriculums')->insert([
             'title' => 'テストタイトル',
             'thumbnail' => 'サムネイルタイトル',
-            'description' => 'カリキュラムの説明文がここに入る',
+            'description' => 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
             'video_url' => '../../public/storage/videos/rocket_-_235 (720p).mp4',
             'alway_delivery_flg' => 1,
             'classes_id' => 3,
+            'created_at' => now()
+        ]);
+        
+        DB::table('curriculum_progress')->insert([
+            'curriculums_id' => 1,
             'created_at' => now()
         ]);
     }

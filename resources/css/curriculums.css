@@ -1,7 +1,7 @@
 #main-container {
   width: 100%;
 }
-#main-container img {
+#main-container video {
   width: 400px;
 }
 #main-container .flex-box {
@@ -18,7 +18,7 @@
   margin: 0 auto;
   text-align: center;
 }
-#main-container .flex-box #main-contents .image-btn-box .completion-btn button {
+#main-container .flex-box #main-contents .image-btn-box .completion-btn .button {
   display: inline-block;
   border: none;
   border-radius: 10px;
@@ -27,6 +27,7 @@
   font-size: 20px;
   color: white;
   background-color: rgb(235, 88, 55);
+  cursor: pointer;
 }
 #main-container .flex-box #main-contents #curriculum .classes {
   display: flex;
@@ -45,4 +46,4 @@
 }
 #main-container .flex-box #main-contents #curriculum h4 {
   margin: 0 0 30px;
-}/*# sourceMappingURL=delivery.css.map */
+}/*# sourceMappingURL=curriculums.css.map */

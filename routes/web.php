@@ -18,6 +18,9 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
 Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
+Route::get('/curriculums', [App\Http\Controllers\CurriculumController::class, 'showCurriculums'])->name('curriculums')->middleware('auth');
+
+Route::post('/curriculum_progress', [App\Http\Controllers\CurriculumController::class, 'FlgChenge'])->name('flgChenge')->middleware('auth');
 
 /*Route::get('/', function () {
     if(auth()->check()){
@@ -39,9 +42,9 @@ Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles'])-
 
 //Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles']);
 
-Route::get('/delivery', function () {
+/*Route::get('/delivery', function () {
         return view('delivery');
-});
+});*/
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
