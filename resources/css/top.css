@@ -23,8 +23,6 @@
   height: 10px;
   border-radius: 10px;
   background-color: black;
-}
-#main-container #banner .image-icon ul li {
   margin-right: 10px;
 }
 #main-container #banner .image-icon ul :last-child {
@@ -37,7 +35,7 @@
   height: 400px;
 }
 #main-container #notice h2 {
-  color: red;
+  color: black;
 }
 #main-container #notice .notice-box {
   margin: 0 auto;
@@ -45,4 +43,8 @@
   height: 150px;
   border: 1px solid black;
   border-radius: 10px;
+}
+#main-container #notice .notice-box ul li a {
+  color: black;
+  text-decoration: none;
 }/*# sourceMappingURL=top.css.map */

@@ -16,23 +16,28 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', function () {
+Route::get('/', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
+Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
+
+/*Route::get('/', function () {
     if(auth()->check()){
         return view('top');
     }else{
         return view('/auth/login');
     }
     
-});
+});*/
 
-Route::get('/top', function () {
+/*Route::get('/top', function () {
     if(auth()->check()){
-        return view('top');
+        return view('top');        
     }else{
         return view('/auth/login');
     }
-});
+});*/
 
+
+//Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles']);
 
 Route::get('/delivery', function () {
         return view('delivery');

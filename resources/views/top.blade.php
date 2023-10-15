@@ -26,8 +26,13 @@
         <h2>お知らせ</h2>
         <div class="notice-box">
             <ul>
-                <li>adsf</li>
-                <li>adsf</li>
+                @foreach($articles as $article)
+                <li>
+                    <a href="#">
+                        {{ \Carbon\Carbon::parse($article->posted_date)->format('Y年m月d日') }}　　　　　{{ $article->title }}
+                    </a>
+                </li>
+                @endforeach
             </ul>
         </div>
     </div>
