@@ -15,6 +15,15 @@ class Create_Artisn_Curriculums extends Seeder
      */
     public function run()
     {        
+
+        DB::table('users')->insert([
+            'name' => 'TNG',
+            'name_kana' => 'TNG',
+            'email' => 'abc@gmail.com',
+            'password' => '123456789',
+            'created_at' => now()
+        ]);
+
         DB::table('articles')->insert([
             [
                 'title' => 'test1',
@@ -34,15 +43,25 @@ class Create_Artisn_Curriculums extends Seeder
             'title' => 'テストタイトル',
             'thumbnail' => 'サムネイルタイトル',
             'description' => 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
-            'video_url' => '../../public/storage/videos/rocket_-_235 (720p).mp4',
+            'video_url' => '../public/storage/videos/rocket_-_235 (720p).mp4',
             'alway_delivery_flg' => 1,
             'classes_id' => 3,
             'created_at' => now()
         ]);
         
         DB::table('curriculum_progress')->insert([
-            'curriculums_id' => 1,
+            'users_id' => 1,
+            'curriculumus_id' => 1,
+            'clear_flg' => 0,
             'created_at' => now()
+        ]);
+
+        DB::table('delivery_times')->insert([
+            'curriculums_id' => 1,
+            'delivery_from' => now(),
+            'delivery_to' => now(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }

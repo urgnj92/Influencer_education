@@ -15,13 +15,9 @@ return new class extends Migration
     {
         Schema::create('delivery_times', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('thumbnail')->nullable();
-            $table->longText('description')->nullable();
-            $table->mediumText('video_url')->nullable();
-            $table->Integer('alway_delivery_flg');
-            $table->unsignedBigInteger('classes_id');
-            $table->foreign('classes_id')->references('id')->on('classes');
+            $table->string('curriculums_id')->references('id')->on('curriculums')->nullable();
+            $table->longText('delivery_from')->nullable();
+            $table->mediumText('delivery_to')->nullable();
             $table->timestamps();
         });
     }
