@@ -20,7 +20,7 @@ Route::get('/', [App\Http\Controllers\TopController::class, 'showArticles'])->na
 Route::get('/top', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
 Route::get('/curriculums', [App\Http\Controllers\CurriculumController::class, 'showCurriculums'])->name('curriculums')->middleware('auth');
 
-Route::post('/curriculum_progress', [App\Http\Controllers\CurriculumController::class, 'FlgChenge'])->name('flgChenge')->middleware('auth');
+Route::post('/flgChenge', [App\Http\Controllers\CurriculumController::class, 'flgChenge'])->name('flgChenge')->middleware('auth');
 
 /*Route::get('/', function () {
     if(auth()->check()){

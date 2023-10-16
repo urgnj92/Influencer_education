@@ -14,4 +14,21 @@ class CurriculumController extends Controller
 
         return view('curriculums',['curriculums' => $curriculums]);
     }
+
+    public function flgChenge(Request $request){
+
+        $recordId = $request->input('id');
+        DB::beginTransaction();
+
+        try{
+            $model = new Curriculum();
+            $model->flgChenge($recordId);
+            DB::commit();
+        }catch(\Exception $e){
+            \Log::debug($e->getMessage());
+            DB::rollback();
+
+            return back();
+        }
+    }
 }

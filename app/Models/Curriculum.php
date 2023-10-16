@@ -18,6 +18,14 @@ class Curriculum extends Model
       ->get();
 
     return $curriculums;
+  }
+  
+  public function flgChenge($recordId){
+    DB::table('curriculum_progress')
+      ->where('id', $recordId)
+      ->update([
+        'clear_flg' => 1
+      ]);
 }
 
 }

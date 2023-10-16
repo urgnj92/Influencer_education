@@ -17,8 +17,9 @@
                     <video class="slide" src="{{ $curriculum->video_url }}" alt="動画" controls muted>
                 </div>
                 <div class="completion-btn">
-                    <form action="{{ route('curriculums') }}">
-                        <input type="text" value="1" hidden>
+                    <form action="{{ route('flgChenge') }}" method="POST">
+                        @csrf
+                        <input class="curriculumId" type="text" value="{{ $curriculum->id }}" hidden>
                         <input class="button" type="submit" value="受講しました">
                     </form>
                 </div>
@@ -43,5 +44,5 @@
 @endsection
 
 @section('script')
-<script src="../resources/js/delivery.js"></script>
+<script src="../resources/js/curriculum.js"></script>
 @endsection
