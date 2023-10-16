@@ -20,7 +20,11 @@
                     <form action="{{ route('flgChenge') }}" method="POST">
                         @csrf
                         <input class="curriculumId" type="text" value="{{ $curriculum->id }}" hidden>
-                        <input class="button" type="submit" value="受講しました">
+                        @if($curriculum->clear_flg == 0)
+                        <input class="button clear" type="submit" value="受講しました">
+                        @else
+                        <input class="button notClear" type="text" value="受講済み" disabled>
+                        @endif
                     </form>
                 </div>
             </div>

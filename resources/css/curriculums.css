@@ -20,6 +20,7 @@
 }
 #main-container .flex-box #main-contents .image-btn-box .completion-btn .button {
   display: inline-block;
+  text-align: center;
   border: none;
   border-radius: 10px;
   width: 200px;
@@ -27,6 +28,8 @@
   font-size: 20px;
   color: white;
   background-color: rgb(235, 88, 55);
+}
+#main-container .flex-box #main-contents .image-btn-box .completion-btn .clear {
   cursor: pointer;
 }
 #main-container .flex-box #main-contents #curriculum .classes {

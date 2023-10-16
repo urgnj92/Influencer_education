@@ -13,7 +13,12 @@ class Curriculum extends Model
   public function getCurriculums($data){
     $curriculums = DB::table('curriculums')
       ->join('classes', 'curriculums.classes_id', '=', 'classes.id')
-      ->select('curriculums.*', 'classes.name as class_name')
+      ->join('curriculum_progress', 'curriculums.id', '=', 'curriculums.id')
+      ->select(
+        'curriculums.*',
+        'classes.name as class_name',
+        'curriculum_progress.clear_flg as clear_flg'
+        )
       ->where('curriculums.id', $data)
       ->get();
 
