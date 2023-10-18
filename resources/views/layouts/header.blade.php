@@ -17,9 +17,9 @@
 		<div id="header-contents">
 			<nav>
 				<ul class="header-nav">
-					<li id="setList"><a href="">時間割</a></li>
-					<li id="classProgress"><a href="">授業進捗</a></li>
-					<li id="profileSettings"><a href="">プロフィール設定</a></li>
+					<li id="setList"><a href="#">時間割</a></li><!--リンクはそれぞれの担当者が指定したルートに変更-->
+					<li id="classProgress"><a href="#">授業進捗</a></li><!--リンクはそれぞれの担当者が指定したルートに変更-->
+					<li id="profileSettings"><a href="#">プロフィール設定</a></li><!--リンクはそれぞれの担当者が指定したルートに変更-->
 				</ul>
 			</nav>
 			<div class="navbar-nav ms-auto">
