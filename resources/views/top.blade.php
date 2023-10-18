@@ -8,19 +8,17 @@
     <div id="banner">
         <div class="banner-image">
             @foreach($banners as $banner)
-            <img class="slide" src="{{ asset($banner -> image) }}" alt="">
+            <img class="slide" src="{{ asset($banner -> image) }}" alt="" value="img-{{$classCount}}" data-count="{{$classCount}}">
+            @php $classCount ++ @endphp
             @endforeach
-            <!--<img class="slide" src="public/images/cosplay-5650215_1280.jpg" alt="">
-            <img class="slide" src="../public/storage/images/dr-strange-7251770_1280.jpg" alt="">
-            <img class="slide" src="../public/storage/images/ironman-1049412_1280.jpg" alt="">
-            <img class="slide" src="../public/storage/images/linkedin-7341248_1280.jpg" alt="">-->
+            @php $classCount = 1 @endphp
         </div>
         <div class="image-icon">
             <ul>
-                <li class="li1"></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                @for($i=0; $i<$count; $i++)
+                <li class="bannersBtn li-{{$classCount}}" value="img-{{$classCount}}"></li>
+                @php $classCount++ @endphp
+                @endfor                
             </ul>
         </div>
     </div>

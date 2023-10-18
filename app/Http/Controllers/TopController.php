@@ -14,8 +14,17 @@ class TopController extends Controller
         $bannerModel = new Banner();
         $articles = $articleModel->getArticles();
         $banners = $bannerModel->getBanners();
+        //$bannerChenge = count($banners->image);
 
-        return view('top',compact('articles', 'banners'));
+        /*$count = 0;
+        foreach($banners as $banner){
+            $count++;
+        }*/
+
+        $count = count($banners);
+        $classCount = 1;
+
+        return view('top',compact('articles', 'banners', 'count', 'classCount'));
     }
 
 }

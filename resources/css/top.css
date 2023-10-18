@@ -11,6 +11,10 @@
 }
 #main-container #banner .banner-image img {
   height: 200px;
+  display: none;
+}
+#main-container #banner .banner-image .active {
+  display: inline-block;
 }
 #main-container #banner .image-icon ul {
   display: flex;
@@ -24,6 +28,7 @@
   border-radius: 10px;
   background-color: black;
   margin-right: 10px;
+  cursor: pointer;
 }
 #main-container #banner .image-icon ul :last-child {
   margin: 0;
