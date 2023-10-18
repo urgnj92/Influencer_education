@@ -4,14 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Article;
+use App\Models\Banner;
 use Illuminate\Support\Facades\DB;
 
 class TopController extends Controller
 {
     public function showArticles(){
-        $model = new Article();
-        $articles = $model->getArticles();
+        $articleModel = new Article();
+        $bannerModel = new Banner();
+        $articles = $articleModel->getArticles();
+        $banners = $bannerModel->getBanners();
 
-        return view('top',['articles' => $articles]);
+        return view('top',compact('articles', 'banners'));
     }
+
 }

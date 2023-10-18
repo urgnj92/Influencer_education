@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class Create_Artisn_Curriculums extends Seeder
+class Create_TotalSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -63,5 +63,20 @@ class Create_Artisn_Curriculums extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        $images = [
+            'cosplay-5650215_1280.jpg',
+            'dr-strange-7251770_1280.jpg',
+            'ironman-1049412_1280.jpg',
+            'linkedin-7341248_1280.jpg',
+        ];
+
+        foreach ($images as $image) {
+            $filePath = '../public/storage/images/' . $image;
+
+            DB::table('banners')->insert([
+                'image' => $filePath,
+            ]);
+        }
     }
 }

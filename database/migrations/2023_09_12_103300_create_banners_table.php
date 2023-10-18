@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('banners', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('image');
+            $table->string('image');
             $table->timestamps();
         });
     }

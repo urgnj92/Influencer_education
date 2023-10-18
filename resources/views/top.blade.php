@@ -7,10 +7,13 @@
 <div id="main-container">
     <div id="banner">
         <div class="banner-image">
-            <img class="slide" src="../public/storage/images/cosplay-5650215_1280.jpg" alt="">
+            @foreach($banners as $banner)
+            <img class="slide" src="{{ asset($banner -> image) }}" alt="">
+            @endforeach
+            <!--<img class="slide" src="public/images/cosplay-5650215_1280.jpg" alt="">
             <img class="slide" src="../public/storage/images/dr-strange-7251770_1280.jpg" alt="">
             <img class="slide" src="../public/storage/images/ironman-1049412_1280.jpg" alt="">
-            <img class="slide" src="../public/storage/images/linkedin-7341248_1280.jpg" alt="">
+            <img class="slide" src="../public/storage/images/linkedin-7341248_1280.jpg" alt="">-->
         </div>
         <div class="image-icon">
             <ul>
