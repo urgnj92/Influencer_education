@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
+
 
 class User extends Authenticatable
 {
@@ -41,4 +45,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getUsers() {
+        // users tableからデータを取得
+        $users = DB::table('users')->get();
+        return $users;
+    }
+
+    public function articlesGetList($id) {
+        // articles tableからデータを取得
+        $articles = DB::table('articles')->where('id', $id)->get();
+        return $articles;
+    }
+
+    
+    
+
+
 }
+

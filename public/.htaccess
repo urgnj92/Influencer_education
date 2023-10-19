@@ -3,6 +3,7 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+
     RewriteEngine On
 
     # Handle Authorization Header
@@ -18,4 +19,10 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # # Set Content-Type for CSS files
+    <FilesMatch "\.(css)$">
+        Header set Content-Type text/css
+    </FilesMatch>
+
 </IfModule>
