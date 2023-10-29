@@ -22,6 +22,7 @@ Route::get('/curriculums', [App\Http\Controllers\CurriculumController::class, 's
 Route::get('/home', [App\Http\Controllers\TopController::class, 'showArticles'])->name('top')->middleware('auth');
 
 Route::post('/flgChenge', [App\Http\Controllers\CurriculumController::class, 'flgChenge'])->name('flgChenge')->middleware('auth');
+Route::post('/article', [App\Http\Controllers\ArticleController::class, 'showArticle'])->name('article')->middleware('auth');
 
 
 /*Route::get('/', function () {

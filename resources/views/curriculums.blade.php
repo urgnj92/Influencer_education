@@ -6,7 +6,7 @@
 @section('content')
 <div id="main-container">
     <div class="return">
-        <a href="{{ route('top') }}">←戻る</a><!---戻り先は検討中-->
+        <a href="{{ route('top') }}">←戻る</a><!---戻り先は時間割-->
     </div>
 
     <div class="flex-box">

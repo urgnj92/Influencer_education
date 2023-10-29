@@ -10,7 +10,7 @@ class CurriculumController extends Controller
 {
     public function showCurriculums(Request $request){
         $model = new Curriculum();
-        $curriculums = $model->getCurriculums($request);//テストでは$requestを整数に変更
+        $curriculums = $model->getCurriculums(1);//テストでは$requestを整数に変更
 
         return view('curriculums',['curriculums' => $curriculums]);
     }

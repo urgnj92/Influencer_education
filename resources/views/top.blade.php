@@ -29,7 +29,7 @@
             <ul>
                 @foreach($articles as $article)
                 <li>
-                    <a href="#">
+                    <a href="{{ route('article', ['value' => $article->id]) }}">
                         {{ \Carbon\Carbon::parse($article->posted_date)->format('Y年m月d日') }}　　　　　{{ $article->title }}
                     </a>
                 </li>
