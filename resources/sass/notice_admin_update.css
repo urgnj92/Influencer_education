@@ -1,0 +1,58 @@
+button {
+  background-color: #636262;
+  border-color: #dddddd;
+  border-style: solid;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
+}
+
+label {
+  display: block;
+  width: 10em;
+  float: left;
+}
+
+input {
+  width: 300px;
+}
+
+input#message {
+  height: 80px;
+}
+
+.back {
+  margin: 10px;
+  padding: 10px;
+}
+
+.body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.button {
+  text-align: center;
+}
+
+.button button {
+  margin: 0 auto;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+}
+
+.item textarea {
+  resize: none;
+  width: 300px;
+  height: 150px;
+}
+
+.main {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}/*# sourceMappingURL=notice_admin_update.css.map */

@@ -22,7 +22,7 @@ class CurriculumProgress extends Model
     }
 
     public function getGrades() {
-        // classesテーブルからデータを取得
+        // gradesテーブルからデータを取得
         $grades = DB::table('grade')->get();
         return $grades;
     }

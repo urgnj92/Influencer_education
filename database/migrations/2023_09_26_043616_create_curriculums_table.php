@@ -21,7 +21,7 @@ return new class extends Migration
             $table->mediumText('video_url')->nullable();
             $table->Integer('alway_delivery_flg');
             $table->unsignedBigInteger('classes_id');
-            $table->foreign('classes_id')->references('id')->on('classes');
+            $table->foreign('classes_id')->references('id')->on('grade');
             $table->timestamps();
         });
     }

@@ -10,6 +10,7 @@ use App\Models\CurriculumProgress;
 use App\Models\Curriculum;
 use App\Models\Article;
 use App\Models\User;
+use Carbon\Carbon;
 
 
 class UsersController extends Controller
@@ -80,11 +81,15 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      */
     // お知らせ一覧
-    public function show($id)
+    public function show(Request $request)
     {
         // インスタンス生成
         $model = new Article;
-        $articles = $model->articlesGetList($id);
+        $articles = $model->articlesGetList();
+        // $articles内の各記事のposted_dateをCarbonのインスタンスに変換
+        foreach ($articles as $article) {
+            $article->posted_date = Carbon::parse($article->posted_date);
+        }
     
         return view('notice', compact('articles'));
     }
@@ -125,3 +130,4 @@ class UsersController extends Controller
         //
     }
 }
+

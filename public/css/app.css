@@ -8,34 +8,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-.flex-box{
+
+.main {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    /* flex-wrap: wrap; */
-    width: 600px; 
-    margin: 0 auto;
 }
-
-/* .main {
-	display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    flex-wrap: wrap;
-    width: 600px; 
-    margin: 0 auto;
-}  */
-
 .grade {
-    width: 25%;
     margin: 10px;
     padding: 10px;
 }
 
-/* .progress_table { 
-    width: 100%;
-} */
-
+.body .notice_title {
+    font-size: 15px;
+}
 
 p {
     background-color: lightblue;
@@ -43,6 +28,7 @@ p {
     /* text-align: center; */
     width: 100px;
 }
+
 
 th {
 	padding: 4px;
@@ -54,3 +40,4 @@ td {
 	padding: 4px;
 	/* background:; */
 }
+

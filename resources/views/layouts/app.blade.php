@@ -18,7 +18,7 @@
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
     
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
@@ -33,11 +33,14 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
-                
-                <button class="time_table" type="button">{{ __('時間割') }}</button>
-                <button class="curriculum_progress" type="button">{{ __('授業進捗') }}</button>
-                <button class="profile" type="button">{{ __('プロフィール設定') }}</button>
-
+                <div id="header-contents">
+                    <nav>
+                        <ul class="header-nav">
+                            <li id="setList"><button type="button" class="btn btn-primary" onclick="#">時間割</li><!--リンクはそれぞれの担当者が指定したルートに変更-->
+                            <li id="classProgress"><button type="button" class="btn btn-primary" onclick="location.href='{{ route('curriculum_progress') }}'">授業進捗</button></li><!--リンクはそれぞれの担当者が指定したルートに変更-->
+                            <li id="profileSettings"><button type="button" class="btn btn-primary" onclick="#">プロフィール設定</li><!--リンクはそれぞれの担当者が指定したルートに変更-->
+                        </ul>
+                    </nav>
             </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,7 +82,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        <!-- @endguest -->
                     </ul>
                 </div>
             </div>

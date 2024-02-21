@@ -1,0 +1,52 @@
+button {
+    background-color: #20916e;
+    border-color: #dddddd;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    color: #ffffff;
+    width: 100px;
+}
+
+button.btn-danger {
+    background-color: #e62319;
+    border-color: #dddddd;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    color: #ffffff;
+    width: 100px;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.back {
+    margin: 10px;
+    padding: 10px;
+}
+
+.body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// .main {
+//     text-align: left;
+//     margin: 20px;
+// }
+.main {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#table {
+    margin: 20px;
+}

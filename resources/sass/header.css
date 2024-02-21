@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+body header {
+  background-color: rgb(235, 88, 55);
+}
+body header #header-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  height: 70px;
+}
+body header #header-contents .header-nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  height: 30px;
+}
+body header #header-contents .header-nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 170, 174);
+  border-radius: 10px;
+  width: 130px;
+  font-style: normal;
+  border-color: rgb(50, 170, 174);
+}
+body header #header-contents .header-nav #classProgress {
+  margin: 0 20px;
+}
+body header #header-contents .header-nav #setList, body header #header-contents .header-nav #classProgress {
+  font-size: 20px;
+}
+body header #header-contents .header-nav #profileSettings {
+  font-size: 13px;
+}
+body header #header-contents .header-nav a {
+  display: block;
+  color: white;
+}
+body header #header-contents .logout-link {
+  color: black;
+  font-size: 15px;
+}/*# sourceMappingURL=header.css.map */

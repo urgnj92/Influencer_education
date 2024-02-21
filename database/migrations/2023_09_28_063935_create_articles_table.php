@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             // titleの引数IntegerからTextに変更
             $table->text('title');
-            $table->dateTime('posted_date');
+            $table->date('posted_date');
             $table->longText('article_contents');
             $table->timestamps();
         });

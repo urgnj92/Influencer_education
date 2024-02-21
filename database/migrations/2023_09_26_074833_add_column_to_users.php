@@ -18,7 +18,7 @@ return new class extends Migration
             $table->dropColumn('email_verified_at');
             $table->string('profile_image')->nullable();
             $table->unsignedBigInteger('classes_id');
-            $table->foreign('classes_id')->references('id')->on('classes');
+            $table->foreign('classes_id')->references('id')->on('grade');
         });
     }
 
